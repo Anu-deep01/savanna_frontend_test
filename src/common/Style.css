@@ -1,0 +1,98 @@
+.tablists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.tablists li {
+    max-width: 48%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.tablists .maincard {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: none;
+}
+.tablists .cardcontent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0 !important;
+}
+.cardcontent .cardmedia {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    min-width: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    font-size: 14px;
+    color: #fff;
+}
+.cardcontent h6 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+.cardcontent p {
+    font-size: 14px;
+}
+.tabbottom {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+.tabbottom .MuiContainer-root {
+    padding: 0;
+}
+.tabhead .MuiTabs-flexContainer  {
+    justify-content: flex-start;
+    gap: 45px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.tabhead .MuiTabs-flexContainer button {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #A0A0A0;
+    min-width: unset;
+    padding: 12px 12px;
+}
+.tabhead .MuiTabs-flexContainer button.Mui-selected {
+    color: #000;
+}
+.tabhead .MuiTabs-indicator  {
+    background-color: #000;
+    height: 3px;
+}
+.headingnm {
+    position: relative;
+    border-bottom: 1px solid #f1f1f1;
+}
+.headingnm h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-flex;
+    padding: 0 15px 10px;
+    text-align: center;
+}
+.headingnm h6::before {
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #000;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .tablists li {
+        max-width: 100%;
+    }
+}
